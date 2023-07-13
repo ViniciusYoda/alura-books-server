@@ -16,7 +16,7 @@ function insereLivro(livroNovo) {
 
     const novaListaDeLivros = [...livros, livroNovo]
 
-    fs.writeFileSync("livro.json", JSON.stringify(novaListaDeLivros))
+    fs.writeFileSync("livros.json", JSON.stringify(novaListaDeLivros))
 }
 
 function modificaLivro(modificacoes, id) {
